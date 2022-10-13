@@ -1,0 +1,35 @@
+<h1>PROJETO PLAYER DE VÍDEO</h1>
+
+<video id="meuVideo" width="800" height="450" controls autoplay controlsList="nodowload">
+    <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4">
+
+</video>
+
+<div wm-progresso="meuVideo" class="progress" id="progre">
+    <div></div>
+</div>
+
+<div>
+    <button wm-play="meuvideo" onclick="play()">Play</button>
+    <button wm-play="meuvideo" onclick="pause">Pause</button>
+
+</div>
+
+<style>
+    .progress{
+        height: 20px;
+        width: 500px;
+        border: solid 1px #444;
+        margin: 10px;
+    }
+
+    .progress > div {
+        background-color: red;
+        color: #f1f1f1;
+        height: 100%;
+        font-size: 14px;
+    }
+</style>
+
+<script>
+</script>
